@@ -181,9 +181,11 @@ input   {
     color: white;
     text-decoration: none;
 }
-.footer a:hover   {
+
+.redes a :hover   {
     transform: scale(1.1);
 }
+
 .footer  {
     grid-area: redes ;
     display: flex;
