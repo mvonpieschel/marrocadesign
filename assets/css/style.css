@@ -1,28 +1,34 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-figure:hover    {
-    transform: scale(1.1);
+figure:hover {
+  transform: scale(1.1);
 }
 
-.redes  {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0px 10px 0px 10px;
-}
-.red:hover    {
-    transform: scale(1.1);
+.red:hover {
+  transform: scale(1.1);
 }
 
 .animate__zoomInDown {
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation: bounce; 
-    animation-duration: 2s; 
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 2s;
 }
 
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 10px;
+}
 
+.numeracion {
+  margin-bottom: 100px;
+}
 
+body main div div div h2 {
+  text-decoration-line: underline;
+}/*# sourceMappingURL=style.css.map */
