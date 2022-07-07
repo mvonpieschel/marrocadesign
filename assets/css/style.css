@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 
-figure:hover {
-  transform: scale(1.1);
-}
-
-.red:hover {
+figure:hover, .red:hover {
   transform: scale(1.1);
 }
 
@@ -17,6 +13,20 @@ figure:hover {
   margin: 0 0.5rem;
   animation: bounce;
   animation-duration: 2s;
+}
+
+.animate__jackInTheBox {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.animate__fadeInRightBig {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 1s;
 }
 
 .redes {
@@ -28,7 +38,6 @@ figure:hover {
 .animate__fadeInUp {
   display: inline-block;
   margin: 0 0.5rem;
-  animation: bounce;
   animation-duration: 2s;
 }
 .animate__fadeInUp:hover {
