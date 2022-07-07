@@ -2,29 +2,24 @@ figure:hover, .red:hover    {
     transform: scale(1.1);
 }
 
-
-.animate__zoomInDown {
+.animacionBase  {
     display: inline-block;
-    margin: 0 0.5rem;
-    animation: bounce; 
+    margin: 0 0.5rem;    
+}
+.animate__zoomInDown, .animate__jackInTheBox  {
+    @extend .animacionBase;
     animation-duration: 2s; 
 }
 
-.animate__jackInTheBox    {
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation: bounce; 
+.animate__fadeInUp    {
+    @extend .animacionBase;
     animation-duration: 2s; 
+        &:hover {
+            transform: scale(1.1);    
+        }        
 }
-
-
 
 .animate__fadeInRightBig    {
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation: bounce; 
-    animation-duration: 1s; 
+    @extend .animacionBase;
+    animation-duration: 1s;
 }
-
-
-

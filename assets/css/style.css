@@ -8,40 +8,29 @@ figure:hover, .red:hover {
   transform: scale(1.1);
 }
 
-.animate__zoomInDown {
+.animacionBase, .animate__fadeInRightBig, .animate__fadeInUp, .animate__zoomInDown, .animate__jackInTheBox {
   display: inline-block;
   margin: 0 0.5rem;
-  animation: bounce;
+}
+
+.animate__zoomInDown, .animate__jackInTheBox {
   animation-duration: 2s;
 }
 
-.animate__jackInTheBox {
-  display: inline-block;
-  margin: 0 0.5rem;
-  animation: bounce;
+.animate__fadeInUp {
   animation-duration: 2s;
+}
+.animate__fadeInUp:hover {
+  transform: scale(1.1);
 }
 
 .animate__fadeInRightBig {
-  display: inline-block;
-  margin: 0 0.5rem;
-  animation: bounce;
   animation-duration: 1s;
 }
 
 .redes {
   display: flex;
   justify-content: space-evenly;
-  margin: 0px 10px;
-}
-
-.animate__fadeInUp {
-  display: inline-block;
-  margin: 0 0.5rem;
-  animation-duration: 2s;
-}
-.animate__fadeInUp:hover {
-  transform: scale(1.1);
 }
 
 .numeracion {
