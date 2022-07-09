@@ -1,5 +1,9 @@
-.redes  {
-    display: flex;
-    justify-content: space-evenly;
+@mixin flex-space-evenly{
+    display:flex;
+    justify-content:space-evenly;
 }
+
+.redes {
+    @include flex-space-evenly;
+} 
 

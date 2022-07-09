@@ -1,0 +1,23 @@
+$tiempo: 2s;
+
+$redes: ( /*declaro un Mapa para redes*/
+ig: #E4405F,
+fb: #1877F2,
+wap: #25D366
+);
+
+@each $red, $color in $redes {
+ .redContacto--#{$red} {
+ color: $color;
+ }
+}
+
+$estilos: (   /*match de color titulo con imagen*/
+ color: #336C1D,
+);
+
+.tituloPromo {
+ color: map-get($estilos, color);
+}
+
+

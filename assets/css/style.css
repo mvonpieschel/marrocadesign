@@ -8,6 +8,22 @@ figure:hover, .red:hover {
   transform: scale(1.1);
 }
 
+.redContacto--ig {
+  color: #E4405F;
+}
+
+.redContacto--fb {
+  color: #1877F2;
+}
+
+.redContacto--wap {
+  color: #25D366;
+}
+
+.tituloPromo {
+  color: #336C1D;
+}
+
 .animacionBase, .animate__fadeInRightBig, .animate__fadeInUp, .animate__zoomInDown, .animate__jackInTheBox {
   display: inline-block;
   margin: 0 0.5rem;
@@ -18,14 +34,14 @@ figure:hover, .red:hover {
 }
 
 .animate__fadeInUp {
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 .animate__fadeInUp:hover {
   transform: scale(1.1);
 }
 
 .animate__fadeInRightBig {
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .redes {
@@ -39,4 +55,34 @@ figure:hover, .red:hover {
 
 body main div div div h2 {
   text-decoration-line: underline;
+}
+
+.redContacto--ig {
+  color: #E4405F;
+}
+
+.redContacto--fb {
+  color: #1877F2;
+}
+
+.redContacto--wap {
+  color: #25D366;
+}
+
+.tituloPromo {
+  color: #336C1D;
+}
+
+.navbar {
+  background-image: linear-gradient(to bottom, #e2e1e1 0%, white 100%);
+}
+
+.footer {
+  background-image: linear-gradient(to top, #e2e1e1 0%, white 100%);
+}
+
+.navbar-brand {
+  background: -webkit-linear-gradient(#eee, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=style.css.map */

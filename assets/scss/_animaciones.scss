@@ -2,18 +2,20 @@ figure:hover, .red:hover    {
     transform: scale(1.1);
 }
 
+@import "variables.scss";
+
 .animacionBase  {
     display: inline-block;
     margin: 0 0.5rem;    
 }
 .animate__zoomInDown, .animate__jackInTheBox  {
     @extend .animacionBase;
-    animation-duration: 2s; 
+    animation-duration: $tiempo; 
 }
 
 .animate__fadeInUp    {
     @extend .animacionBase;
-    animation-duration: 2s; 
+    animation-duration: calc($tiempo / 2); 
         &:hover {
             transform: scale(1.1);    
         }        
@@ -21,5 +23,5 @@ figure:hover, .red:hover    {
 
 .animate__fadeInRightBig    {
     @extend .animacionBase;
-    animation-duration: 1s;
-}
+    animation-duration: $tiempo;
+} 
