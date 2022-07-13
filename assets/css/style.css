@@ -53,10 +53,6 @@ figure:hover, .red:hover {
   margin-bottom: 100px;
 }
 
-body main div div div h2 {
-  text-decoration-line: underline;
-}
-
 .redContacto--ig {
   color: #E4405F;
 }
@@ -81,8 +77,36 @@ body main div div div h2 {
   background-image: linear-gradient(to top, #e2e1e1 0%, white 100%);
 }
 
-.navbar-brand {
-  background: -webkit-linear-gradient(#eee, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.accordion-button {
+  background-image: linear-gradient(to top, #b8b8b8 0%, white 100%);
+}
+
+.accordion-item {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: grey;
+}
+
+.accordion-header, .accordion-body {
+  font-size: medium;
+}
+
+.accordion-button {
+  color: grey;
+  font-size: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(70%);
+}
+
+.accordion-button::after {
+  filter: brightness(0%) invert(100%);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */

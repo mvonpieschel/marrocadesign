@@ -1,0 +1,37 @@
+
+
+.accordion-item {
+    border: 1px solid rgba(0, 0, 0, .15);
+    color: grey;
+}
+
+.accordion-header, .accordion-body  {
+    font-size: medium
+}
+
+.accordion-button   {
+    color: grey;
+    font-size: inherit;
+
+}
+
+.accordion-button:not(.collapsed)   {
+    color: black;
+}
+
+.accordion-button:not(.collapsed)::after    {
+    filter: brightness(0%) invert(70%);
+}
+
+.accordion-button::after    {
+    filter: brightness(0%) invert(100%);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+
+
+
