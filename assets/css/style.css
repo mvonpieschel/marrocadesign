@@ -8,22 +8,6 @@ figure:hover, .red:hover {
   transform: scale(1.1);
 }
 
-.redContacto--ig {
-  color: #E4405F;
-}
-
-.redContacto--fb {
-  color: #1877F2;
-}
-
-.redContacto--wap {
-  color: #25D366;
-}
-
-.tituloPromo {
-  color: #336C1D;
-}
-
 .animacionBase, .animate__fadeInRightBig, .animate__fadeInUp, .animate__zoomInDown, .animate__jackInTheBox {
   display: inline-block;
   margin: 0 0.5rem;
@@ -51,22 +35,6 @@ figure:hover, .red:hover {
 
 .numeracion {
   margin-bottom: 100px;
-}
-
-.redContacto--ig {
-  color: #E4405F;
-}
-
-.redContacto--fb {
-  color: #1877F2;
-}
-
-.redContacto--wap {
-  color: #25D366;
-}
-
-.tituloPromo {
-  color: #336C1D;
 }
 
 .navbar {

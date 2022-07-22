@@ -1,6 +1,7 @@
 $tiempo: 2s;
 
-$redes: ( /*declaro un Mapa para redes*/
+/* No se usaron al final por estetica de la pagína pero era para aplicar colores
+$redes: ( 
 ig: #E4405F,
 fb: #1877F2,
 wap: #25D366
@@ -12,12 +13,15 @@ wap: #25D366
  }
 }
 
-$estilos: (   /*match de color titulo con imagen*/
+
+$estilos: (   
  color: #336C1D,
 );
+
+
 
 .tituloPromo {
  color: map-get($estilos, color);
 }
 
-
+*/
