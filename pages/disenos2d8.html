@@ -1,190 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Impresion, 3D, PLA">
-    <title>Diseños 2D, impresion PLA</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
-        </style>
-        <link rel="shortcut icon" href="../assets/img/icon_aa5fef4b3f79a6c972f6715a0eff78fb.ico" type="image/x-icon">
-</head>
-<body class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" >Marroca Design</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">2D</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./disenos3d.html">Cuadros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pla.html">PLA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./promociones.html">Promos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./carrito.html">Carrito</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Impresion, 3D, PLA" name="keywords"/>
+  <title>
+   Diseños 2D, impresion PLA
+  </title>
+  <!-- CSS only -->
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" rel="stylesheet"/>
+  <link href="../assets/css/style.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+  </style>
+  <link href="../assets/img/icon_aa5fef4b3f79a6c972f6715a0eff78fb.ico" rel="shortcut icon" type="image/x-icon"/>
+ </head>
+ <body class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     Marroca Design
+    </a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link" href="../index.html">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="#">
+        2D
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="./disenos3d.html">
+        Cuadros
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="./pla.html">
+        PLA
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="./promociones.html">
+        Promos
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="./contacto.html">
+        Contacto
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="./carrito.html">
+        <span id="cart-counter">
+         Carrito
+        </span>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="row justify-content-evenly mt-5">
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla rooster en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/ROOSTER WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Rooster II
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla paisaje urbano en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PAISAJE URBANO WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Paisaje Urbano
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla panda en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PANDA 2 WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Panda II
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla panda en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PANDA WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Panda
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla pantera en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PANTERA WALL SCULPTURE 2D.jpg"/>
+     <figcaption class="figure-caption product-title">
+      Pantera
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla loro en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PARROT WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Parrot
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla mujer en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PENDIENTE CHICA CON PERLA I JOHANNES VERMEER I LINE ART.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Chica
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla pinguino en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PENGUIN WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Penguin
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla peter pan en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PETER PAN ESCULTURA DE PARED 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Peter Pan
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla anana en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PINEAPPLE WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Pinapple
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla pinocchio en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PINOCCHIO WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Pinocchio
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla pointer en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/POINTER DOG WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Pointer
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla pug en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PUG DOG WALL SCULPTURE 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Pug
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla puma en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PUMA ESCULTURA DE PARED 2D.jpg"/>
+     <figcaption class="figure-caption product-title">
+      Puma
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none product-card">
+    <figure>
+     <img alt="imagen 2d en pla puma en impresion 3d" class="figure-img img-fluid shadow mt-2 bg-body rounded" src="../assets/img/2d/PUMA SCULPTURE WALL 2D.JPG"/>
+     <figcaption class="figure-caption product-title">
+      Puma II
+     </figcaption>
+    </figure>
+    <div class="text-center">
+     <p class="price">
+      $2500
+     </p>
+     <input class="form-control mb-2 quantity" min="1" type="number" value="1"/>
+     <button class="btn btn-primary add-to-cart">
+      Agregar al Carrito
+     </button>
+    </div>
+   </div>
+   <div class="numeracion">
+    <nav aria-label="...">
+     <ul class="pagination justify-content-center">
+      <li class="page-item">
+       <a class="page-link text-secondary" href="./disenos2d7.html">
+        Previous
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link text-secondary" href="./disenos2d6.html">
+        06
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link text-secondary" href="./disenos2d7.html">
+        07
+       </a>
+      </li>
+      <li aria-current="page" class="page-item active">
+       <a class="page-link bg-dark border-dark" href="#">
+        08
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link text-secondary" href="./disenos2d9.html">
+        09
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link text-secondary" href="./disenos2d10.html">
+        10
+       </a>
+      </li>
+      <li class="page-item">
+       <a class="page-link text-secondary" href="./disenos2d9.html">
+        Next
+       </a>
+      </li>
+     </ul>
     </nav>
-<main class="row justify-content-evenly mt-5">
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/ROOSTER WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla rooster en impresion 3d">
-            <figcaption class="figure-caption">Rooster II</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PAISAJE URBANO WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla paisaje urbano en impresion 3d">
-            <figcaption class="figure-caption">Paisaje Urbano</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PANDA 2 WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla panda en impresion 3d">
-            <figcaption class="figure-caption">Panda II</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PANDA WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla panda en impresion 3d">
-            <figcaption class="figure-caption">Panda</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PANTERA WALL SCULPTURE 2D.jpg" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla pantera en impresion 3d">
-            <figcaption class="figure-caption">Pantera</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PARROT WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla loro en impresion 3d">
-            <figcaption class="figure-caption">Parrot</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PENDIENTE CHICA CON PERLA I JOHANNES VERMEER I LINE ART.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla mujer en impresion 3d">
-            <figcaption class="figure-caption">Chica</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PENGUIN WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla pinguino en impresion 3d">
-            <figcaption class="figure-caption">Penguin</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PETER PAN ESCULTURA DE PARED 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla peter pan en impresion 3d">
-            <figcaption class="figure-caption">Peter Pan</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PINEAPPLE WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla anana en impresion 3d">
-            <figcaption class="figure-caption">Pinapple</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PINOCCHIO WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla pinocchio en impresion 3d">
-            <figcaption class="figure-caption">Pinocchio</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/POINTER DOG WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla pointer en impresion 3d">
-            <figcaption class="figure-caption">Pointer</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PUG DOG WALL SCULPTURE 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla pug en impresion 3d">
-            <figcaption class="figure-caption">Pug</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PUMA ESCULTURA DE PARED 2D.jpg" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla puma en impresion 3d">
-            <figcaption class="figure-caption">Puma</figcaption>
-        </figure>
-    </a>
-    <a class="figure col-10 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 mx-xxl-1 text-decoration-none" href="../pages/carrito.html">
-        <figure>
-            <img src="../assets/img/2d/PUMA SCULPTURE WALL 2D.JPG" class="figure-img img-fluid shadow mt-2 bg-body rounded" alt="imagen 2d en pla puma en impresion 3d">
-            <figcaption class="figure-caption">Puma II</figcaption>
-        </figure>
-    </a>
-    <div class="numeracion">
-        <nav aria-label="...">
-            <ul class="pagination justify-content-center">
-                <li class="page-item">
-                    <a class="page-link text-secondary" href="./disenos2d7.html">Previous</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-secondary" href="./disenos2d6.html">06</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-secondary" href="./disenos2d7.html">07</a>
-                </li>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link bg-dark border-dark" href="#">08</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-secondary" href="./disenos2d9.html">09</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link text-secondary" href="./disenos2d10.html">10</a></li>
-                <li class="page-item">
-                    <a class="page-link text-secondary" href="./disenos2d9.html">Next</a>
-                </li>
-            </ul>
-        </nav>
+   </div>
+  </main>
+  <footer class="container-fluid footer text-center fixed-bottom">
+   <div class="redes">
+    <div class="red">
+     <a href="https://www.instagram.com/marroca.design/" target="_blank">
+      <i class="bi bi-instagram" style="font-size: 1.5rem; color: black">
+      </i>
+     </a>
     </div>
-</main>
-<footer class="container-fluid footer text-center  fixed-bottom">
-    <div class="redes" >
-        <div class="red">
-            <a href="https://www.instagram.com/marroca.design/" target="_blank"><i class="bi bi-instagram" style="font-size: 1.5rem; color: black"></i></a>
-        </div>
-        <div class="red">
-            <a href="https://www.facebook.com/marrocadesign" target="_blank"><i class="bi bi-facebook" style="font-size: 1.5rem; color: black"></i></a>
-        </div>
-        <div class="red">
-            <a href="https://api.whatsapp.com/send/?phone=5491158461222&text&app_absent=0" target="_blank"><i class="bi bi-whatsapp" style="font-size: 1.5rem; color: black"></i></a>
-        </div>   
+    <div class="red">
+     <a href="https://www.facebook.com/marrocadesign" target="_blank">
+      <i class="bi bi-facebook" style="font-size: 1.5rem; color: black">
+      </i>
+     </a>
     </div>
-    <div>
-        <p class="animate__fadeInUp" ><a href="http://www.marroca.ar/" class="link-dark text-decoration-none redes mb-1" target="_blank">©2022 MvonPIESCHEL</a></p>
+    <div class="red">
+     <a href="https://api.whatsapp.com/send/?phone=5491158461222&amp;text&amp;app_absent=0" target="_blank">
+      <i class="bi bi-whatsapp" style="font-size: 1.5rem; color: black">
+      </i>
+     </a>
     </div>
-</footer>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <div class="red">
+     <a href="#" target="_blank">
+      <i class="bi bi-tiktok" style="font-size: 1.5rem; color: black">
+      </i>
+     </a>
+    </div>
+   </div>
+   <div>
+    <p class="animate__fadeInUp">
+     <a class="link-dark text-decoration-none redes mb-1" href="http://www.marroca.ar/" target="_blank">
+      ©2022 MvonPIESCHEL
+     </a>
+    </p>
+   </div>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script crossorigin="anonymous" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../assets/js/main.js">
+  </script>
+ </body>
 </html>
